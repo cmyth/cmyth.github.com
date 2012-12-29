@@ -16,8 +16,20 @@
   </h1>
 
   <p>
+    The goal of the cmyth project is to produce a lightweight library
+    capable of communicating with a <a href="http://www.mythtv.org">MythTV</a>
+    backend using only the
+    <a href="http://www.mythtv.org/wiki/Category:Myth_Protocol">MythTV
+    protocol</a>.  It also supports accessing the backend database via MySQL,
+    but this is optional for extended functionality.  This project was
+    spun off from the <a href="http://www.mvpmc.org/">mvpmc</a> project, which
+    implemented libcmyth in order to create a MythTV frontend for the
+    Hauppauge MediaMVP set-top-box.
+  </p>
+
+  <p>
     The following git repositories exist for the cmyth project:
- </p>
+  </p>
 
   <ul>
     <li>
@@ -26,10 +38,12 @@
       </p>
       <p>
         cmyth is a portable C language library for communicating with a MythTV
-        server.  The library supports most version of MythTV dating
-        back to 2004 and can be used to implement a full-featured
+        backend.  The library supports most versions of MythTV dating
+        back to 2004 (MythTV protocol versions 8 through 75) and can
+	be used to implement a full-featured
         MythTV frontend.  The repository also incudes a few sample
-        applications, including a FUSE filesystem.
+        applications, including a
+	<a href="http://fuse.sourceforge.net/">FUSE</a> filesystem.
       </p>
     </li>
     <li>
@@ -49,6 +63,18 @@
       </p>
     </li>
   </ul>
+
+  <hr>
+
+  <p>
+    An experimental wrapper around libcmyth can be found
+    <a href="https://github.com/gettler/cmyth">here</a> which adds support for
+    using libcmyth from several other languages: C++, Common Lisp, Java, Perl,
+    PHP, Python, and Ruby.  The API for these languages is not currently as
+    extensive as is available in libcmyth.  The goal is to create a clean
+    object-oriented API that eventually will include all of the
+    functionality that exists in libcmyth.
+  </p>
 
 </body>
 
